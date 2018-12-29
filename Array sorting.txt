@@ -1,0 +1,21 @@
+import java.util.*;
+
+ class Solution {
+    public static void main(String[] args)
+    {
+    	int st[];
+    	Scanner in=new Scanner(System.in);
+    	int len=in.nextInt();
+		st=new int[len];
+		for(int i=0;i<st.length;i++)
+		{
+			st[i]=in.nextInt();
+		}
+        Arrays.sort(st);  //. java.util.Arrays uses quicksort to sort 
+        
+
+        System.out.printf("Sorted  arr[] : %s",
+                          Arrays.toString(st));
+        System.out.println("Smallest element:" + st[0]);
+    }
+}
